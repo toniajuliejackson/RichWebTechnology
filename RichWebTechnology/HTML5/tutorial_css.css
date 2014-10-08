@@ -1,0 +1,64 @@
+div {
+	border: 1px solid;
+	margin: 5px;
+	padding: 3px;
+}
+
+#div-before{
+	background-color: #8181f7;
+	
+	position: static; /*do everytime to keep your layout in all browsers*/
+}
+
+#div-1{
+	background-color: black;
+	color: white;
+	
+	/*position: relative;
+	top: 20px; /*where the div is normally pushed down 20px*/
+	/*
+	left: -40px;*/ 
+	
+	
+	/*position: relative;
+	height: 300px;*/
+}
+
+#div-1a{
+	background-color: red;
+	color: white;
+	
+	/*absolute positioning takes the window as a reference */
+	/*position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 200px;*/
+	
+	float: left;
+	width: 200px;
+}
+
+#div-1b{
+	background-color: green;
+	color: white;
+	
+	/*position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 200px;*/
+	
+	float: left;
+	width: 200px;
+}
+
+#div-1c{
+	background-color: blue;
+	color: white;
+	
+	clear: both;
+}
+
+#div-after{
+	background-color: #8181f7;
+	color: black;
+}

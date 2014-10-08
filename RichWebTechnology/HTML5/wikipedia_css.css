@@ -1,0 +1,197 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+	background-color: #f6f6f6;
+}
+
+#accounts_nav {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 10em;
+}
+
+div {
+	padding: 5px;
+	font-family: serif;
+}
+
+#sidebar {
+	font-size: inherit;
+	position: absolute;
+	top: 160px;
+	padding-top: 1em;
+	width: 10em;
+	left: 0;
+	margin-left: 10px;
+}
+
+#sidebar ul{
+	list-style-type: none;
+}
+
+#start_sidebar {
+	list-style:none;
+    padding-left:0;
+}
+
+#logo {
+	position: absolute;
+	top: -160px;
+	left: -25px;
+	width: 10em;
+	height: 160px;
+}
+
+#header-left-navigation {
+	float: right;
+	width: 85%;
+	position: absolute;
+	line-height: 1.125em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f3f3f3;
+	margin-top: 2.5em;
+}
+
+#header-left-navigation li {
+	display: inline;
+}
+
+#header-right-navigation {
+	float: right;
+	width: 30%;
+	list-style-type: none;
+	background-color: #f3f3f3;
+	margin-top: 2.5em;
+}
+
+#header-right-navigation li {
+	display: inline;
+}
+
+#header-right-navigation form {
+	display: inline-block;
+}
+
+#list {
+	display: inline-block;
+	display: table;
+	zoom: 1;
+	padding: 7px;
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+
+#firstheading {
+	font-family: "Linux Libertine", Georgia, Times, serif;
+	line-height: 1.3;
+	margin-bottom: 0.25em;
+	padding: 0;
+	font-size: 25px;
+	margin-top: 0;
+}
+
+#subfirstheading {
+	display: inline;
+	font-size: 92%;
+}
+
+#subsection {
+	border-left: 3px solid yellow;
+	border-right: 1px solid grey;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	float: centre;
+	margin: 20px
+}
+
+#header {
+	width: 80%;
+}
+
+#listtitle {
+	text-align: center;
+}
+
+#list_ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#listtoggle {
+	font-size: 94%;
+}
+
+#footer {
+	line-height: 1.4em margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #333;
+	font-size: 0.7em;
+	clear: both;
+	margin-left: 11em;
+	padding: 1.25em;
+}
+
+#footer_info {
+	list-style-type: none;
+}
+
+#footer_places {
+	list-style-type: none;
+}
+
+#footer_icons {
+	list-style-type: none;
+	display: list-item;
+	text-align: -webkit-match-parent;
+	margin: 0;
+	padding: 0;
+	float: right;
+	direction: ltr;
+}
+
+#footer li {
+	display: inline;
+}
+
+#article {
+	position: relative;
+	float: right;
+	width: 84%;
+	border: 1px solid #a7d7f9;
+	border-right-width: 0;
+	margin-top: -1px;
+	background-color: #fff;
+	color: #252525;
+	direction: ltr;
+}
+
+#edit_tag {
+	font-size: small;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+#heading h1, #heading p {
+	display: inline;
+	vertical-align: centre;
+}
+
+#contents {
+	border: 1px solid grey;
+	float: centre;
+	margin: 10px;
+	width: 250px;
+	background-color: #f6f6f6;
+}
