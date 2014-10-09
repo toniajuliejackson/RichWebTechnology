@@ -8,7 +8,7 @@
 <title>Defeasible reasoning - Wikipedia, the free encyclopedia</title>
 <link href="wikipedia_css.css" rel="stylesheet" />
 </head>
-<body>
+<body id="body">
 	<div id="sidebar">
 		<figure id="logo">
 			<img
@@ -57,30 +57,38 @@
 			<li><a href="">中文</a></li>
 		</ul>
 	</div>
-		<div id="header-left-navigation">
+	<div id="personal-accounts">
 		<ul>
-			<li class="selected"><span>Article	</span></li>
-			<li><span>	Talk</span></li>
-		</ul>
-	</div>	
-	<div id="header-right-navigation">
-		<ul>
-			<li id="ca-view" class="selected"><span><a
-					href="/wiki/Defeasible_reasoning">Read</a></span></li>
-			<li id="ca-edit"><span><a
-					href="/w/index.php?title=Defeasible_reasoning&amp;action=edit">Edit</a></span></li>
-			<li id="ca-history" class="collapsible"><span><a
-					href="/w/index.php?title=Defeasible_reasoning&amp;action=history">View
-						history</a></span></li>
-			<form action="" id="searchform">
-				<input type="search" name="search" placeholder="Search"
-					title="Search Wikipedia [ctrl-alt-f]" accesskey="f"
-					id="searchInput" tabindex="1" autocomplete="off"><input
-					type="hidden" value="Special:Search" name="title">
-			</form>
+			<li id="pt-createaccount"><a
+				href="/w/index.php?title=Special:UserLogin&amp;returnto=Defeasible+reasoning&amp;type=signup" style="text-decoration:none;">Create
+					account</a></li>
+			<li id="pt-login"><a
+				href="/w/index.php?title=Special:UserLogin&amp;returnto=Defeasible+reasoning"
+				style="text-decoration:none;">Log in</a></li>
 		</ul>
 	</div>
-
+	<div id="wrapper">
+		<div id="header-left-navigation">
+			<ul>
+				<li class="selected"><span>Article </span></li>
+				<li class="grad"><span> Talk</span></li>
+			</ul>
+		</div>
+		<div id="header-right-navigation">
+			<ul>
+				<li id="ca-view" class="selected"><span>Read</span></li>
+				<li id="ca-edit" class="grad"><span>Edit</span></li>
+				<li id="ca-history" class="grad"><span>View
+							history</span></li>
+				<li><form action="submit" id="searchform">
+						<input type="search" name="search" placeholder="Search"
+							title="Search Wikipedia [ctrl-alt-f]" accesskey="f"
+							id="searchInput" tabindex="1" autocomplete="off"><input
+							type="hidden" value="Special:Search" name="title">
+					</form></li>
+			</ul>
+		</div>
+	</div>
 	<div id="article">
 		<section id="defeasible_resoning_section">
 			<br>
@@ -166,7 +174,7 @@
 		</section>
 
 		<section id="history_section">
-			<div id="heading">
+			<div id="heading-history">
 				<h1>History</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -288,7 +296,7 @@
 		</section>
 
 		<section id="political_and_judicial_use_section">
-			<div id="heading">
+			<div id="heading-political">
 				<h1>Political and judical use</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -329,7 +337,7 @@
 			</p>
 		</section>
 		<section id="specificity_section">
-			<div id="heading">
+			<div id="heading-specificity">
 				<h1>Specificity</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -341,7 +349,15 @@
 				defeasible reasoning is the status of a rule of specificity. In its
 				simplest form, it is the same rule as subclass <a href="">inheritance</a>
 				preempting class inheritance:
-			</p>
+			<pre id="pre"> (R1) if <i>p</i> then (defeasibly) <i>q</i>                  e.g., if penguin then not-flies
+ (R2) if <i>r</i> then (defeasibly) <i>not-q</i>              e.g., if bird then flies
+ (O1) if <i>p</i> then (deductively) <i>r</i>                 e.g., if penguin then bird
+ (M1) arguably, p                               e.g., arguably, penguin
+ (M2) R1 is a more specific reason than R2      e.g., R1 is better than R2
+ (M3) therefore, arguably, q                    e.g., therefore, arguably, not-flies
+</pre>
+
+
 			<p>
 				Approximately half of the systems of defeasible reasoning discussed
 				today adopt a rule of specificity, while half expect that such <i>preference</i>
@@ -362,7 +378,7 @@
 		</section>
 
 		<section id="nature_of_defeasibility_section">
-			<div id="heading">
+			<div id="heading-nature">
 				<h1>Nature of defeasibility</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -425,7 +441,7 @@
 		</section>
 
 		<section id="see_also_section">
-			<div id="heading">
+			<div id="heading-see-also">
 				<h1>See also</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -448,7 +464,7 @@
 		</section>
 
 		<section id="references_section">
-			<div id="heading">
+			<div id="heading-references">
 				<h1>References</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -496,7 +512,7 @@
 		</section>
 
 		<section id="external_links_section">
-			<div id="heading">
+			<div id="heading-external-links">
 				<h1>External Links</h1>
 				<p>
 					<a href=""> [edit]</a>
@@ -519,7 +535,7 @@
 	</div>
 	<div id="footer" role="contentinfo">
 		<ul id="footer_info">
-			<li>This page was last modified on 3 January 2014 at 07:15.<br>
+			<li><br />This page was last modified on 3 January 2014 at 07:15.<br>
 			</li>
 			<li id="footer-info-copyright">Text is available under the <a
 				rel="license"
