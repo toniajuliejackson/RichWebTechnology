@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function validate() {
+
+		if (document.myForm.name.value == "") {
+			alert("Please provide your name!");
+			return false;
+		}
+
+		if (document.myForm.age.value == "-1") {
+			alert("Please select age!");
+			return false;
+		}
+
+		if (!document.myForm.terms_conditions.checked) {
+			alert("Please indicate that you accept the Terms and Conditions!");
+			return false;
+		}
+
+		if ((myForm.gender[0].checked == false)
+				&& (myForm.gender[1].checked == false)) {
+			alert("Please choose your Gender: Male or Female");
+			return false;
+		}
+	}
+</script>
+
+<title>Javascript Lab | Week 5</title>
+</head>
+<body>
+
+	<form name="myForm" action="" method="get" onSubmit="validate();">
+		Your Name: <input type="text" name="name"><br>
+		<hr>
+		Age: <select name="age" id="age" class="required">
+			<option value="-1" selected="selected">Select</option>
+			<option value="1">0-18</option>
+			<option value="2">18-30</option>
+			<option value="3">30-45</option>
+			<option value="4">45-60</option>
+			<option value="5">60+</option>
+		</select> <br>
+		<hr>
+		Gender: <br> <input type="radio" name="gender" value="male">Male<br>
+		<input type="radio" name="gender" value="female">Female <br>
+		<hr>
+		<input type="checkbox" name="terms_conditions" value="Terms">Terms
+		and Conditions<br>
+		<hr>
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
