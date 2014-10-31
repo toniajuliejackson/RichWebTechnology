@@ -14,15 +14,15 @@
 			alert("Please select age!");
 			return false;
 		}
-
-		if (!document.myForm.terms_conditions.checked) {
-			alert("Please indicate that you accept the Terms and Conditions!");
+		
+		if ((document.myForm.gender[0].checked == false)
+				&& (document.myForm.gender[1].checked == false)) {
+			alert("Please choose your Gender: Male or Female");
 			return false;
 		}
 
-		if ((myForm.gender[0].checked == false)
-				&& (myForm.gender[1].checked == false)) {
-			alert("Please choose your Gender: Male or Female");
+		if (!document.myForm.terms_conditions.checked) {
+			alert("Please indicate that you accept the Terms and Conditions!");
 			return false;
 		}
 	}
